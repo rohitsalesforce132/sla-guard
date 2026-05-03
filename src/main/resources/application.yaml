@@ -1,0 +1,28 @@
+quarkus:
+  application:
+    name: sla-guard
+  http:
+    port: 8080
+  log:
+    level: INFO
+    category:
+      com.slaguard: DEBUG
+
+sla-guard:
+  monitoring:
+    interval-seconds: 30
+    history-size: 100
+  prediction:
+    ema-alpha: 0.3
+    warning-threshold: 0.8
+    critical-threshold: 0.95
+    prediction-window-minutes: 15
+  camara:
+    base-url: http://localhost:9090/camara
+    api-key: ${CAMARA_API_KEY:test-key}
+  tmf:
+    base-url: http://localhost:9091/tmf
+  intent:
+    enabled: true
+    model: ${OPENAI_MODEL:gpt-4}
+    api-key: ${OPENAI_API_KEY:}
