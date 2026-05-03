@@ -1,0 +1,49 @@
+{
+  "request": { "method": "GET", "url": "/qod/v0/qos-profiles" },
+  "response": {
+    "status": 200,
+    "jsonBody": [
+      {
+        "name": "QOS_E",
+        "description": "Emergency — highest priority for emergency services",
+        "status": "ACTIVE",
+        "priority": 99,
+        "packetDelayBudget": { "value": 10, "unit": "Milliseconds" },
+        "packetErrorLossRate": 1
+      },
+      {
+        "name": "QOS_S",
+        "description": "Signaling — very high priority for control plane",
+        "status": "ACTIVE",
+        "priority": 80,
+        "packetDelayBudget": { "value": 30, "unit": "Milliseconds" },
+        "packetErrorLossRate": 2
+      },
+      {
+        "name": "QOS_M",
+        "description": "Medium — high priority for premium services",
+        "status": "ACTIVE",
+        "priority": 60,
+        "packetDelayBudget": { "value": 50, "unit": "Milliseconds" },
+        "packetErrorLossRate": 3
+      },
+      {
+        "name": "QOS_L",
+        "description": "Low — medium priority for standard services",
+        "status": "ACTIVE",
+        "priority": 40,
+        "packetDelayBudget": { "value": 100, "unit": "Milliseconds" },
+        "packetErrorLossRate": 5
+      },
+      {
+        "name": "QOS_B",
+        "description": "Background — best effort for non-critical traffic",
+        "status": "ACTIVE",
+        "priority": 20,
+        "packetDelayBudget": { "value": 300, "unit": "Milliseconds" },
+        "packetErrorLossRate": 8
+      }
+    ],
+    "headers": { "Content-Type": "application/json" }
+  }
+}

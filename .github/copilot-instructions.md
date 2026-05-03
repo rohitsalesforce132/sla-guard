@@ -258,3 +258,8 @@ POST /api/v1/qod/sessions
 - Intent parsing has rule-based fallback if AI is unavailable
 - Mock sessions created if CAMARA API is not reachable
 - Database schema auto-generated via Hibernate (hbm2ddl=update)
+
+<!-- SPECKIT START -->
+For additional context about technologies to be used, project structure,
+shell commands, and other important information, read the current plan
+<!-- SPECKIT END -->

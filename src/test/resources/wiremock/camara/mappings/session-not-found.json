@@ -1,0 +1,15 @@
+{
+  "request": {
+    "method": "GET",
+    "urlPath": "/qod/v0/sessions/nonexistent-session-id"
+  },
+  "response": {
+    "status": 404,
+    "jsonBody": {
+      "status": 404,
+      "code": "NOT_FOUND",
+      "message": "Session Id does not exist"
+    },
+    "headers": { "Content-Type": "application/json" }
+  }
+}

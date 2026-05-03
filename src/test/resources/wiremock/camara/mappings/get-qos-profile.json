@@ -1,0 +1,15 @@
+{
+  "request": { "method": "GET", "url": "/qod/v0/qos-profiles/QOS_E" },
+  "response": {
+    "status": 200,
+    "jsonBody": {
+      "name": "QOS_E",
+      "description": "Emergency — highest priority for emergency services",
+      "status": "ACTIVE",
+      "priority": 99,
+      "packetDelayBudget": { "value": 10, "unit": "Milliseconds" },
+      "packetErrorLossRate": 1
+    },
+    "headers": { "Content-Type": "application/json" }
+  }
+}

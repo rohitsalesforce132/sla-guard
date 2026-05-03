@@ -1,0 +1,18 @@
+{
+  "request": { "method": "GET", "url": "/qod/v0/sessions/3fa85f64-5717-4562-b3fc-2c963f66afa6" },
+  "response": {
+    "status": 200,
+    "jsonBody": {
+      "sessionId": "3fa85f64-5717-4562-b3fc-2c963f66afa6",
+      "device": { "ipv4Address": { "publicAddress": "203.0.113.1" } },
+      "applicationServer": { "ipv4Address": "198.51.100.1" },
+      "qosProfile": "QOS_E",
+      "duration": 3600,
+      "startedAt": 1700000000,
+      "expiresAt": 1700003600,
+      "qosStatus": "AVAILABLE",
+      "messages": [{ "severity": "INFO", "description": "QoS session is active" }]
+    },
+    "headers": { "Content-Type": "application/json" }
+  }
+}
